@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Formation-react.git/static/css/main.bd4e6936.chunk.css",
-    "main.js": "/Formation-react.git/static/js/main.b50c810b.chunk.js",
-    "main.js.map": "/Formation-react.git/static/js/main.b50c810b.chunk.js.map",
-    "runtime-main.js": "/Formation-react.git/static/js/runtime-main.80519095.js",
-    "runtime-main.js.map": "/Formation-react.git/static/js/runtime-main.80519095.js.map",
-    "static/js/2.1d15d0b9.chunk.js": "/Formation-react.git/static/js/2.1d15d0b9.chunk.js",
-    "static/js/2.1d15d0b9.chunk.js.map": "/Formation-react.git/static/js/2.1d15d0b9.chunk.js.map",
-    "index.html": "/Formation-react.git/index.html",
-    "static/css/main.bd4e6936.chunk.css.map": "/Formation-react.git/static/css/main.bd4e6936.chunk.css.map",
-    "static/js/2.1d15d0b9.chunk.js.LICENSE.txt": "/Formation-react.git/static/js/2.1d15d0b9.chunk.js.LICENSE.txt"
+    "main.css": "/Formation-react/static/css/main.bd4e6936.chunk.css",
+    "main.js": "/Formation-react/static/js/main.b50c810b.chunk.js",
+    "main.js.map": "/Formation-react/static/js/main.b50c810b.chunk.js.map",
+    "runtime-main.js": "/Formation-react/static/js/runtime-main.f21528e1.js",
+    "runtime-main.js.map": "/Formation-react/static/js/runtime-main.f21528e1.js.map",
+    "static/js/2.1d15d0b9.chunk.js": "/Formation-react/static/js/2.1d15d0b9.chunk.js",
+    "static/js/2.1d15d0b9.chunk.js.map": "/Formation-react/static/js/2.1d15d0b9.chunk.js.map",
+    "index.html": "/Formation-react/index.html",
+    "static/css/main.bd4e6936.chunk.css.map": "/Formation-react/static/css/main.bd4e6936.chunk.css.map",
+    "static/js/2.1d15d0b9.chunk.js.LICENSE.txt": "/Formation-react/static/js/2.1d15d0b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.80519095.js",
+    "static/js/runtime-main.f21528e1.js",
     "static/js/2.1d15d0b9.chunk.js",
     "static/css/main.bd4e6936.chunk.css",
     "static/js/main.b50c810b.chunk.js"
