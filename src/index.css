@@ -40,3 +40,13 @@ ul.header li a {
 .active {
   background-color: #0099ff;
 }
+img {
+  border-radius: 50%;
+}
+.card {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+}

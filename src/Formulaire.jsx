@@ -1,69 +1,69 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-export class Formulaire extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      name: "",
-      prenom: "",
-      email: "",
-    };
-  }
-  nameChange = (e) => {
-    this.setState({ name: e.target.value });
+function Formulaire(props) {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.id]: e.target.value });
   };
-  emailChange = (e) => {
-    this.setState({ email: e.target.value });
-  };
-  prenomChange = (e) => {
-    this.setState({ prenom: e.target.value });
-  };
-  submit = (e) => {
+  const submit = (e) => {
     e.preventDefault();
-    alert([this.state.name, this.state.prenom, this.state.email]);
+
+    console.log("success", user);
+    // redirected to path
+    props.history.push("/");
   };
-  render() {
-    return (
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-6'>
-            <form onSubmit={this.submit}>
-              <div className='form-group'>
-                <input
-                  onChange={this.nameChange}
-                  type='text'
-                  className='form-control'
-                  placeholder='entrer name'
-                />
-                <br />
-                <input
-                  onChange={this.emailChange}
-                  type='text'
-                  className='form-control'
-                  placeholder='entrer email'
-                />
-                <br />
-                <input
-                  onChange={this.prenomChange}
-                  type='text'
-                  className='form-control'
-                  placeholder='entrer prenom'
-                />
-                <br />
-              </div>
-              <button
-                type='submit'
-                className='btn btn-outline-primary btn-block'
-              >
-                signin
-              </button>
-            </form>
-          </div>
-        </div>
+  const form = () => (
+    <form onSubmit={submit}>
+      <div className='form-group'>
+        <label htmlFor='Name' className='text-muted'>
+          Name
+        </label>
+        <input
+          onChange={handleChange}
+          type='text'
+          className='form-control'
+          id='name'
+        />
       </div>
-    );
-  }
+      <div className='form-group'>
+        <label htmlFor='email' className='text-muted'>
+          email
+        </label>
+        <input
+          onChange={handleChange}
+          type='email'
+          className='form-control'
+          id='email'
+        />
+      </div>
+      <div className='form-group'>
+        <label htmlFor='password' className='text-muted'>
+          password
+        </label>
+        <input
+          onChange={handleChange}
+          type='password'
+          className='form-control'
+          id='password'
+        />
+      </div>
+
+      <button type='submit' className='btn btn-outline-warning'>
+        Submit
+      </button>
+    </form>
+  );
+  return (
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-6 mx-auto'>{form()}</div>
+      </div>
+    </div>
+  );
 }
 
 export default Formulaire;

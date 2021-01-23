@@ -10,11 +10,11 @@ export class Stuff extends Component {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantiu
         </p>
         <ol>
-          <li>welcome </li>
-          <li>welcome </li>
-          <li>welcome </li>
-          <li>welcome </li>
-          <li>welcome </li>
+          <li>Reactjs </li>
+          <li>angular </li>
+          <li>cloud </li>
+          <li>symfony </li>
+          <li>springboot </li>
         </ol>
       </div>
     );

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { NavLink, Route, HashRouter, Router } from "react-router-dom";
 import Home from "./Home";
 import Stuff from "./Stuff";
